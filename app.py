@@ -1,3 +1,14 @@
+from flask import Flask,render_template
+
+app = Flask(__name__)
+@app.route('/')
+def home ():
+    return
+render_template('index.html')
+
+if (__name__ == '_main__'):
+    app.run(debug=True)
+
 class Task:
 
     def __init__ (self, details, due_date,count):
